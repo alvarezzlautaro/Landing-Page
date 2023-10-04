@@ -4,7 +4,8 @@
     --third-background: #1e1c36;
     --text-color: #865dff;
     --text-white: #ffff;
-    --text-dark: #0f0d27; 
+    --text-dark: #0f0d27;
+    --text-black: #000;
     --h1-font : 'Rubik', sans-serif;
     --h2-font : font-family: 'Croissant One', cursive;
 }
@@ -15,7 +16,22 @@
     box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--background);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--third-background);
+    border-radius: 20px;
+    border: 3px solid var(--background);
+}
+
 .main__nav {
+    width: 100%;
     height: 80px;
     background-color: var(--background);
     padding: 0 30px;
@@ -24,7 +40,6 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 100%;
     top: 0;
     z-index: 2;
 }
@@ -84,7 +99,7 @@
 .main {
     width: 100%;
     height: 100%;
-    margin-top: 80px;
+    top: 80px;
     background-color: var(--background);
 
     display: flex;
@@ -172,6 +187,12 @@
     align-items: center;
 }
 
+.about__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about__image {
     display: flex;
     justify-content: center;
@@ -213,3 +234,77 @@
     font-weight: 600;
 }
 
+#cards {
+    width: 60%;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.card__container {
+    height: 420px;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__a {
+    text-decoration: none;
+    color: var(--text-black);
+}
+
+.card__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__img > img {
+    width: 250px;
+    height: 225px;
+}
+
+.card__text {
+    margin-top: 15px;
+    text-wrap: balance;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__h2 {
+    font-size: 22px;
+    color: var(--text-dark);
+    font-family: var(--h2-font);
+}
+
+.card__p {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card__span--bold {
+    font-weight: bold;
+}
+
+.card__btn {
+    height: 40px;
+    width: 120px;
+    font-size: 18px;
+    font-family: var(--h2-font);
+    font-weight: 600;
+    color: var(--text-color);
+    background: var(--background);
+    border-radius: 20px;
+}
