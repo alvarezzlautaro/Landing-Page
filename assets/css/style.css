@@ -1,0 +1,75 @@
+:root {
+    --background: #191825;
+    --second-background: #ffa3fd;
+    --third-background: #1e1c36;
+    --text-color: #865dff;
+    --text-white: #ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main__nav {
+    max-height: 80px;
+    background-color: var(--background);
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__nav--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__nav--logo--img {
+    width: 70px;
+    height: 70px;
+}
+
+.main__nav--menu--list {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.main__nav--menu--list--item--links {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.main__nav--menu--sesion--list {
+    gap: 30px;
+}
+
+.main__nav--login {
+    background-color: var(--second-background);
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.main__nav--login--a {
+    color: var(--text-white);
+}
+
+.main__nav--signup {
+    background-color: var(--third-background);
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.main__nav--signup--a {
+    color: var(--text-white);
+}
