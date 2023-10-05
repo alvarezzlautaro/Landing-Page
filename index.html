@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Styles -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bcb67e065e.js" crossorigin="anonymous"></script>
     
     <title>DiseñoArq Argentina</title>
 </head>
 
 <body>
 
+    <!-- Navbar -->
     <nav class="main__nav">
 
         <div class="main__nav--logo">
@@ -37,7 +43,7 @@
                 </li>
 
                 <li class="main__nav--menu--list--item">
-                    <a class="main__nav--menu--list--item--links" href="#">Contacto</a>
+                    <a class="main__nav--menu--list--item--links" href="#contact">Contacto</a>
                 </li>
 
             </ul>
@@ -64,6 +70,7 @@
 
     <main class="main">
 
+        <!-- Portada/Hero -->
         <section id="portada">
 
             <div class="portada__container">
@@ -76,7 +83,7 @@
 
                     <span class="portada__span">En DecoArq, creamos ambientes interiores únicos que reflejan tu estilo y personalidad. Nuestro equipo de diseñadores expertos se dedica a transformar tus ideas en espacios habitables y funcionales. Descubre cómo podemos hacer realidad tus sueños de diseño.</span>
 
-                    <button class="portada__btn">Contactanos</button>
+                    <button class="portada__btn"><a class="portada__btn--a" href="#">Contactanos</a></button>
 
                 </div>
 
@@ -90,6 +97,7 @@
 
         </section>
 
+        <!-- About Us -->
         <section id="about">
 
             <div class="about__container">
@@ -118,10 +126,11 @@
 
         </section>
 
+        <!-- Cards -->
         <section id="cards">
 
             <div class="card__container">
-                <a class="card__a" href="#cards">
+                <a class="card__a" href="#">
                     <div class="card__img">
 
                         <img src="./assets/img/card-home-img.jpg" alt="Diseño de Hogar">
@@ -142,7 +151,7 @@
 
             <div class="card__container">
 
-                <a class="card__a" href="#cards">
+                <a class="card__a" href="#">
 
                     <div class="card__img">
 
@@ -166,7 +175,7 @@
 
             <div class="card__container">
 
-                <a class="card__a" href="#cards" >
+                <a class="card__a" href="#" >
 
                     <div class="card__img">
 
@@ -190,8 +199,158 @@
 
         </section>
 
+        <!-- Contacto -->
+        <section id="contact">
+
+            <div class="contact__text">
+
+                <h2 class="contact__h2">Contactanos</h2>
+
+                <span class="contact__span"><i class="fa-solid fa-phone"></i>+54 1221 122112</span>
+
+                <span class="contact__span"><i class="fa-solid fa-envelope"></i>correo@ejemplo.com</span>
+
+            </div>
+
+            <hr class="hr--top">
+
+            <div class="contact__container">
+
+                <div class="contact__form">
+
+                    <form class="form">
+
+                        <label for="full-name" class="form__label">Nombre y Apellido</label>
+                        <input id="full-name" type="text" class="form__input" placeholder="Escribe tu Nombre y Apellido" required>
+
+                        <label for="mail" class="form__label">Correo electrónico</label>
+                        <input id="mail" type="email" class="form__input" placeholder="tucorreo@ejemplo.com" required>
+
+                        <label for="comment" class="form__label">Comentario</label>
+                        <textarea class="form__comment" id="comment" cols="30" rows="10" placeholder="Escribe un comentario"></textarea>
+
+                        <div class="submit--center">
+
+                            <input class="form__submit" type="submit" value="Enviar">
+                            
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="map__container">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.5830091927264!2d-59.13950022337979!3d-37.32870400647348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911f97114971c9%3A0xc9be92fa62930112!2sPlaza%20Independencia!5e0!3m2!1ses-419!2sar!4v1696462450342!5m2!1ses-419!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+            </div>
+
+            <hr class="hr--bottom">
+
+        </section>
+
+        <footer class="footer">
+
+            <section class="footer__contact--container">
+
+                <div class="footer__img">
+
+                    <img src="./assets/img/Diseñoarq logo.png" alt="Logo DiseñoArq">
+
+                </div>
+
+                <div class="footer__text">
+
+                    <span class="footer__span">Belgrano 500, Tandil, Prov. de Buenos Aires</span>
+
+                    <span class="footer__span"><i class="footer__icon fa-solid fa-phone"></i>+54 1221 122112</span>
+                    
+                    <span class="footer__span"><i class="footer__icon fa-solid fa-envelope"></i>correo@ejemplo.com</span>
+
+                </div>
+
+            </section>
+
+            <hr class="footer--hr">
+
+            <section class="footer__links--container">
+
+                <span class="footer__links--span">Links útiles</span>
+
+                <nav class="footer__nav">
+
+                    <ul class="footer__nav--list">
+
+                        <li>
+                            <a class="footer__nav--list--item" href="#portada">Inicio</a>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a class="footer__nav--list--item" href="#cards">Servicios</a>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a class="footer__nav--list--item" href="#about">Sobre nosotros</a>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a class="footer__nav--list--item" href="#contact">Contacto</a>
+                        </li>
+
+
+                    </ul>
+
+                </nav>
+
+            </section>
+
+            <hr class="footer--hr">
+
+            <section class="footer__redes--container">
+
+                <h2 class="footer__redes--h2">Redes sociales</h2>
+
+                <div class="footer__container__redes">
+
+                    <a class="footer__redes--links" href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a class="footer__redes--links" href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a class="footer__redes--links" href="#">
+                        <i class="footer__mail fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a class="footer__redes--links" href="#">
+                        <i class=" fa-brands fa-tiktok"></i>
+                    </a>
+
+                </div>
+
+            </section>
+
+            <hr class="footer--hr">
+
+            <section class="footer__copyright--container">
+
+                <h2 class="footer__h2">© 2023 DiseñoArq Argentina. Todos los derechos reservados.</h2>
+
+            </section>
+
+        </footer>
+
     </main>
-    
+
 </body>
 
 </html>
