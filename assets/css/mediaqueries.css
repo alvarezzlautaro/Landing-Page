@@ -1,0 +1,115 @@
+@media (max-width: 1440px) {
+    .about__image {
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Portada */
+    .portada__container {
+        width: 800px;
+    }
+    .portada__h1 {
+        font-size: 16px;
+    }
+    .portada__h2 {
+        font-size: 28px;
+    }
+    .portada__span {
+        font-size: 14px;
+    }
+
+    /* About */
+    #about {
+        width: 800px;
+        margin: 50px 0px;
+        padding: 30px 10px;
+    }
+    .about__container {
+        gap: 20px;
+    }
+    .about__text {
+        width: 350px;
+    }
+    .about__image {
+        width: 400px;
+        height: 400px;
+    }
+    .about__image > img {
+        height: 400px;
+    }
+    .about__h2 {
+        font-size: 20px;
+    }
+    .about__p {
+        font-size: 14px;
+    }
+    .about__span--bold {
+        font-size: 14px;
+    }
+
+    /* Cards */
+    #cards {
+        margin: 50px 0px 0px 0px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card__container {
+        height: 370px;
+        width: 650px;
+    }
+    .card__img > img {
+        display: none;
+    }
+    .card__img > i {
+        display: block;
+        font-size: 80px;
+        color: black;
+    }
+    .card__h2 {
+        font-size: 24px;
+    }
+    .card__p {
+        font-size: 18px;
+    }
+    .card__btn {
+        margin-top: 15px;
+    }
+
+    /* Footer */
+    .footer__img > img {
+        height: 60px;
+        width: 60px;
+    }
+    .footer__span {
+        font-size: 16px;
+    }
+    .footer__icon {
+        font-size: 16px;
+    }
+    .footer__links--span {
+        font-size: 18px;
+    }
+    .footer__nav--list--item {
+        font-size: 18px;
+    }
+    .footer__redes--h2 {
+        font-size: 18px;
+    }
+    .footer__redes--links {
+        font-size: 18px;
+    }
+    .footer__h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 920px) {
+
+
+
+}
