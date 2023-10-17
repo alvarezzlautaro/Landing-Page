@@ -94,7 +94,7 @@
     .footer__span, .footer__icon {
         font-size: 16px;
     }
-    .footer__links--span, .footer__nav--list--item, .footer__redes--h2, .footer__redes--links {
+    .footer__redes--h2, .footer__redes--links {
         font-size: 18px;
     }
     .footer__h2 {
@@ -153,12 +153,6 @@
         display: none;
     }
     .footer__text {
-        gap: 20px;
-    }
-    .footer__links--container {
-        gap: 10px;
-    }
-    .footer__nav--list {
         gap: 20px;
     }
     .footer__redes--container {
@@ -258,10 +252,71 @@
     }
 
     /* Footer */
+    .footer__span {
+        font-size: 14px;
+    }
     .footer__number {
         display: none;
     }
     .footer__email {
         display: none;
     }
+    .footer__h2 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 445px) {
+    /* Portada */
+    .portada__container {
+        width: 350px;
+        padding: 0;
+    }
+
+    /* About */
+    #about {
+        width: 350px;
+        padding: 10px;
+    }
+
+    /* Cards */
+    .card__container {
+        width: 250px;
+        padding: 0;
+    }
+
+    /* Contact */
+    .hr--top {
+        width: 100%;
+    }
+
+    #contact {
+        width: 250px;
+    }
+
+    .contact__text {
+        width: 250px;
+    }
+
+    .hr--bottom {
+        width: 100%;
+    }
+
+    .form__input {
+        width: 250px;
+    }
+
+    /* Footer */
+    .footer__span {
+        font-size: 12px;
+    }
+
+    .footer__redes--h2, .footer__redes--links {
+        font-size: 14px;
+    }
+
+    .footer__h2 {
+        font-size: 12px;
+    }
+
 }
