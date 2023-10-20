@@ -104,6 +104,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main__nav--login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: var(--second-background);
     padding: 10px 15px;
     border-radius: 15px;
@@ -114,6 +118,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main__nav--signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     background-color: var(--third-background);
     padding: 10px 15px;
     border-radius: 15px;

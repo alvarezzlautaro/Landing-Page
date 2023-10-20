@@ -320,3 +320,16 @@
     }
 
 }
+
+@media (max-width: 375px) {
+    /* Navbar */
+    .main__nav--login, .main__nav--signup {
+        padding: 5px 10px;
+    }
+    .main__nav--login--a, .main__nav--signup--a {
+        font-size: 12px;
+    }
+    .portada__container, #about {
+        width: 275px;
+    }
+}
