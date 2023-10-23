@@ -1,0 +1,163 @@
+:root {
+    --background: #191825;
+    --second-background: #ffa3fd;
+    --third-background: #1e1c36;
+    --text-color: #865dff;
+    --text-white: #ffff;
+    --text-dark: #0f0d27;
+    --text-black: #000;
+    --h1-font : 'Rubik', sans-serif;
+    --h2-font : font-family: 'Croissant One', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--background);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--third-background);
+    border-radius: 20px;
+    border: 3px solid var(--background);
+}
+
+.header__nav {
+    width: 100%;
+    height: 80px;
+    background-color: var(--background);
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav--img {
+    width: 70px;
+    height: 70px;
+}
+
+.header__nav--links{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+.header--inicio {
+    background-color: var(--second-background);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    top: 80px;
+    background-color: var(--background);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__card {
+    background-image:url("../img/login-card.jpg");
+    background-size: cover;
+    height: 600px;
+    width: 500px;
+    padding: 0 15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__card--text {
+    font-size: 20px;
+    font-family: var(--h1-font);
+    font-weight: 700;
+    color: var(--text-white);
+    text-align: center;
+    text-wrap: balance;
+}
+
+.main__form {
+    background-color: var(--third-background);
+    height: 600px;
+    width: 300px;
+    padding: 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.main__form--h2 {
+    color: var(--second-background);
+    font-family: var(--h2-font);
+}
+
+.main__form--p {
+    color: var(--text-white);
+    font-family: var(--h2-font);
+    font-weight: 600;
+}
+
+.main__form--p--a {
+    text-decoration: none;
+    color: #1473e6;
+}
+
+.main__form--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main__form--label {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--h1-font);
+    color: var(--text-color);
+}
+
+.main__form--input {
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.main__form--submit {
+    width: 80px;
+    height: 40px;
+    background-color: var(--second-background);
+
+    text-decoration: none;
+    border-radius: 16px;
+    border-color: transparent;
+    font-size: 16px;
+    font-family: var(--h1-font);
+    font-weight: bold;
+    color: var(--text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
