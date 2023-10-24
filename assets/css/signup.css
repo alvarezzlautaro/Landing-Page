@@ -66,3 +66,103 @@ body::-webkit-scrollbar-thumb {
     width: 70px;
     height: 70px;
 }
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    top: 80px;
+    background-color: var(--background);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__card {
+    background-image: url(../img/signup-card.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 500px;
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__card--text {
+    font-size: 20px;
+    font-family: var(--h1-font);
+    font-weight: 700;
+    color: var(--text-white);
+    text-align: center;
+    text-wrap: balance;
+}
+
+.main__form {
+    background-color: var(--third-background);
+    height: 600px;
+    width: 300px;
+    padding: 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.main__form--h2 {
+    color: var(--second-background);
+    font-family: var(--h2-font);
+}
+
+.main__form--p {
+    color: var(--text-white);
+    font-family: var(--h2-font);
+    font-weight: 600;
+}
+
+.main__form--p--a {
+    text-decoration: none;
+    color: #1473e6;
+}
+
+.main__form--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main__form--label {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--h1-font);
+    color: var(--text-color);
+}
+
+.main__form--input {
+    height: 30px;
+    width: 200px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.main__form--submit {
+    width: 100px;
+    height: 40px;
+    background-color: var(--second-background);
+
+    text-decoration: none;
+    border-radius: 16px;
+    border-color: transparent;
+    font-size: 16px;
+    font-family: var(--h1-font);
+    font-weight: bold;
+    color: var(--text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
